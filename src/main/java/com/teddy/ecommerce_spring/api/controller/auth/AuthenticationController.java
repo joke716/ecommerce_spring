@@ -4,9 +4,11 @@ import com.teddy.ecommerce_spring.api.controller.model.LoginBody;
 import com.teddy.ecommerce_spring.api.controller.model.LoginResponse;
 import com.teddy.ecommerce_spring.api.controller.model.RegistrationBody;
 import com.teddy.ecommerce_spring.exception.UserAlreadyExistsException;
+import com.teddy.ecommerce_spring.model.LocalUser;
 import com.teddy.ecommerce_spring.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -44,6 +46,11 @@ public class AuthenticationController {
             response.setJwt(jwt);
             return ResponseEntity.ok(response);
         }
+    }
+
+    @GetMapping("/me")
+    public LocalUser getLoggedInUserProfile(@AuthenticationPrincipal LocalUser user) {
+        return user;
     }
 
 }
