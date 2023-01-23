@@ -1,6 +1,7 @@
 package com.teddy.ecommerce_spring.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 
 /**
  * Address for the user to be billed/delivered to.

@@ -1,6 +1,6 @@
 package com.teddy.ecommerce_spring.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 /**
  * The quantity ordered of a product.

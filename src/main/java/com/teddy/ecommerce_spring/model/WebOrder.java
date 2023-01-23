@@ -1,6 +1,7 @@
 package com.teddy.ecommerce_spring.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 

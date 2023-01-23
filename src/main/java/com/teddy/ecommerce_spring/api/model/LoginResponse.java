@@ -1,4 +1,4 @@
-package com.teddy.ecommerce_spring.api.controller.model;
+package com.teddy.ecommerce_spring.api.model;
 
 public class LoginResponse {
     private String jwt;

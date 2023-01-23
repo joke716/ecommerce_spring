@@ -1,4 +1,4 @@
-package com.teddy.ecommerce_spring.api.controller.security;
+package com.teddy.ecommerce_spring.api.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

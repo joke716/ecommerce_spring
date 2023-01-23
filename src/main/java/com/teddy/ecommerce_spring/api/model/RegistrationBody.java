@@ -1,6 +1,6 @@
-package com.teddy.ecommerce_spring.api.controller.model;
+package com.teddy.ecommerce_spring.api.model;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 
 public class RegistrationBody {
     /** The username. */

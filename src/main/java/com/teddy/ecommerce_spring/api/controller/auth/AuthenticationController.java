@@ -1,17 +1,17 @@
 package com.teddy.ecommerce_spring.api.controller.auth;
 
-import com.teddy.ecommerce_spring.api.controller.model.LoginBody;
-import com.teddy.ecommerce_spring.api.controller.model.LoginResponse;
-import com.teddy.ecommerce_spring.api.controller.model.RegistrationBody;
+import com.teddy.ecommerce_spring.api.model.LoginBody;
+import com.teddy.ecommerce_spring.api.model.LoginResponse;
+import com.teddy.ecommerce_spring.api.model.RegistrationBody;
 import com.teddy.ecommerce_spring.exception.UserAlreadyExistsException;
 import com.teddy.ecommerce_spring.model.LocalUser;
 import com.teddy.ecommerce_spring.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 
 /**
  * Rest Controller for handling authentication requests.

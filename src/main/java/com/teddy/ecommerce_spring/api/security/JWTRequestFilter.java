@@ -1,20 +1,19 @@
-package com.teddy.ecommerce_spring.api.controller.security;
+package com.teddy.ecommerce_spring.api.security;
 
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.teddy.ecommerce_spring.model.LocalUser;
 import com.teddy.ecommerce_spring.model.dao.LocalUserDAO;
 import com.teddy.ecommerce_spring.service.JWTService;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.swing.text.html.Option;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;

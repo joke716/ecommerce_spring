@@ -1,7 +1,8 @@
-package com.teddy.ecommerce_spring.api.controller.model;
+package com.teddy.ecommerce_spring.api.model;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 
 public class LoginBody {
 

@@ -1,6 +1,7 @@
 package com.teddy.ecommerce_spring.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 
 /**
  * A product available for purchasing.

@@ -1,7 +1,7 @@
 package com.teddy.ecommerce_spring.service;
 
-import com.teddy.ecommerce_spring.api.controller.model.LoginBody;
-import com.teddy.ecommerce_spring.api.controller.model.RegistrationBody;
+import com.teddy.ecommerce_spring.api.model.LoginBody;
+import com.teddy.ecommerce_spring.api.model.RegistrationBody;
 import com.teddy.ecommerce_spring.exception.UserAlreadyExistsException;
 import com.teddy.ecommerce_spring.model.LocalUser;
 import com.teddy.ecommerce_spring.model.dao.LocalUserDAO;
